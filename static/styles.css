@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #a18cd1 0%, #6f51a1 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 420px;
+    margin: 40px auto 0 auto;
+    background: rgba(60, 20, 80, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 0, 61, 0.25);
+    padding: 32px 24px 16px 24px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e0c3fc;
+    margin: 0 0 10px 0;
+}
+
+footer {
+    text-align: center;
+    color: #b39ddb;
+    font-size: 0.95rem;
+    margin-top: 30px;
+}
+
+main {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #e0c3fc;
+    margin-bottom: 12px;
+}
+
+a, a:visited {
+    color: #b39ddb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f3e6ff;
+    color: #4a148c;
+    margin-bottom: 8px;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    box-shadow: 0 0 0 2px #a18cd1;
+}
+
+button, input[type="submit"], .button {
+    background: linear-gradient(90deg, #a18cd1 0%, #6f51a1 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background 0.2s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover, input[type="submit"]:hover, .button:hover {
+    background: linear-gradient(90deg, #6f51a1 0%, #a18cd1 100%);
+}
+
+.message {
+    color: #ffb3b3;
+    background: #4a148c;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 16px 4vw 8px 4vw;
+    }
+    .site-title {
+        font-size: 1.4rem;
+    }
+}

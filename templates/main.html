@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <h2>Main Page</h2>
+    <form action="/main" method="post">
+        <input autocomplete="off" placeholder="Recharge Amount" type="number" name="input" min="1">
+        <button type="submit">Recharge</button>
+    </form>
+    <a href="/quest" class="button">View Balance</a>
+
+{% endblock %}
