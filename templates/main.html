@@ -7,6 +7,19 @@
         <input autocomplete="off" placeholder="Recharge Amount" type="number" name="input" min="1">
         <button type="submit">Recharge</button>
     </form>
+
     <a href="/quest" class="button">View Balance</a>
+    <!-- 引入 SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        {% if recharge_amount %}
+        Swal.fire({
+            title: '充值成功',
+            text: '你已充值{{ recharge_amount }}元',
+            icon: 'success',
+            confirmButtonText: '确定'
+        });
+        {% endif %}
+    </script>
 
 {% endblock %}

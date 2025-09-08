@@ -58,6 +58,7 @@ def main():
     if not id:
         return redirect(url_for('login'))
     balance = None
+    input = None
     if request.method == "POST":
         input = request.form.get('input')
         with sqlite3.connect('user2.db') as conn:
@@ -74,4 +75,4 @@ def main():
             cur.execute('SELECT money FROM account WHERE id = (?)', (id,))
             money1 = cur.fetchone()
             balance = money1[0]
-    return render_template('main.html', balance=balance)
+    return render_template('main.html', balance=balance, recharge_amount=input)
